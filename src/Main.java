@@ -5,14 +5,14 @@ public class Main {
         //если клиент пополняет счёт более чем на 1000 рублей,
         //то сотовый оператор дарит ему по 1 рублю за каждые полные 100 рублей пополнения.
 
-        int first = 100;
-        int second = 1100;
+        int balance = 100;
+        int replenishment = 1100;
         int bonus =0;
-        boolean isEnter = second>1000;
+        boolean isEnter = replenishment>1000;
         if(isEnter)
-            bonus= first+second+second/100;
+            bonus= balance+replenishment+replenishment/100;
         else
-            bonus=first+second;
+            bonus=balance+replenishment;
 
         System.out.println(bonus);
     }
