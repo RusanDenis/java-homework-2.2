@@ -7,12 +7,13 @@ public class Main {
 
         int balance = 100;
         int replenishment = 1100;
-        int bonus =0;
-        boolean isEnter = replenishment>1000;
-        if(isEnter)
-            bonus= balance+replenishment+replenishment/100;
-        else
-            bonus=balance+replenishment;
+        int bonus = 0;
+        boolean isEnter = replenishment > 1000;
+        if (isEnter) {
+            bonus = balance + replenishment + replenishment / 100;
+        } else {
+            bonus = balance + replenishment;
+        }
 
         System.out.println(bonus);
     }
