@@ -8,13 +8,16 @@ public class Main {
         int balance = 100;
         int replenishment = 1100;
         int bonus = 0;
+        int score;
         boolean isEnter = replenishment > 1000;
         if (isEnter) {
-            bonus = balance + replenishment + replenishment / 100;
+            bonus = replenishment / 100;
+            score = balance + replenishment + bonus;
         } else {
-            bonus = balance + replenishment;
+            score = balance + replenishment;
         }
 
-        System.out.println(bonus);
+        System.out.println("bonus = " + bonus);
+        System.out.println("score = " + score);
     }
 }
